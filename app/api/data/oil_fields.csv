@@ -1,0 +1,21 @@
+oil_field_id,name,location,,_company,operator_company,start_date
+1,North Ridge,"Basra, Iraq",Basra, Iraq,ABC Oil Corp,3/15/2010
+2,Desert Bloom,"Dhahran, KSA",Dhahran, KSA,Desert Energy,7/1/2015
+3,Blue Horizon,"Abu Dhabi, UAE",Abu Dhabi, UAE,Petra Gulf,9/20/2012
+4,Sandy Crest,"Muscat, Oman",Muscat, Oman,Orion Petroleum,2/11/2016
+5,Eastern Flame,"Doha, Qatar",Doha, Qatar,Qatar Petroleum,12/1/2008
+6,Black Oasis,"Tabuk, KSA",Tabuk, KSA,Red Dune Energy,6/5/2014
+7,Golden Bay,"Kuwait City, Kuwait",Kuwait City, Kuwait,Kuwait Oil Co.,10/10/2009
+8,Deep Valley,"Erbil, Iraq",Erbil, Iraq,Mesopotamia Oil,4/18/2011
+9,Silver Coast,"Manama, Bahrain",Manama, Bahrain,Bahrain National Oil,8/22/2013
+10,Marjan Delta,"Dammam, KSA",Dammam, KSA,Saudi Offshore Energy,11/3/2017
+11,Rust River,"Basra, Iraq",Basra, Iraq,ABC Oil Corp,5/30/2005
+12,Iron Field,"Sharjah, UAE",Sharjah, UAE,Petra Gulf,1/15/2019
+13,Highwind Plains,"Al Ain, UAE",Al Ain, UAE,Blue Sky Drilling,7/29/2020
+14,Red Serpent,"Muscat, Oman",Muscat, Oman,Orion Petroleum,3/14/2007
+15,Crystal Lake,"Doha, Qatar",Doha, Qatar,Qatar Petroleum,9/9/2018
+16,Tiger Ridge,"Tabuk, KSA",Tabuk, KSA,Red Dune Energy,4/17/2013
+17,Emerald Steppe,"Kuwait City, Kuwait",Kuwait City, Kuwait,Kuwait Oil Co.,6/24/2011
+18,Crescent Shore,"Manama, Bahrain",Manama, Bahrain,Bahrain National Oil,12/12/2016
+19,Granite Ridge,"Erbil, Iraq",Erbil, Iraq,Mesopotamia Oil,2/20/2021
+20,Mirage Lowlands,"Dammam, KSA",Dammam, KSA,Saudi Offshore Energy,5/5/2022
