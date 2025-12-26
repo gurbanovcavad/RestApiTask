@@ -32,7 +32,7 @@ class Sensor(models.Model):
     is_active = models.BooleanField()
     
     def __str__(self):
-        return f"{self.sensor_type} sensor for {self.well.name}"
+        return f"{self.sensor_type} sensor for {self.well_id.name}"
     
 
 class ProductionReading(models.Model):

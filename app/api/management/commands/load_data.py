@@ -12,7 +12,6 @@ class Command(BaseCommand):
             reader = csv.DictReader(file)
             for row in reader:
                 oil_fields.append(OilField(
-                    oil_field_id=row['oil_field_id'],
                     name=row['name'],
                     location=row['location'],
                     operator_company=row['operator_company'],
@@ -24,7 +23,6 @@ class Command(BaseCommand):
             reader = csv.DictReader(file)
             for row in reader:
                 wells.append(Well(
-                    well_id=row['well_id'],
                     oil_field_id=OilField.objects.get(oil_field_id=row['oil_field_id']),
                     name=row['name'],
                     status=row['status'],
@@ -37,7 +35,6 @@ class Command(BaseCommand):
             reader = csv.DictReader(file)
             for row in reader:
                 sensors.append(Sensor(
-                    sensor_id=row['sensor_id'],
                     well_id=Well.objects.get(well_id=row['well_id']),
                     sensor_type=row['sensor_type'],
                     install_date=datetime.strptime(row['install_date'], "%Y-%m-%d"),
@@ -49,7 +46,6 @@ class Command(BaseCommand):
             reader = csv.DictReader(file)
             for row in reader:
                 production_readings.append(ProductionReading(
-                    reading_id=row['reading_id'],
                     sensor_id=Sensor.objects.get(sensor_id=row['sensor_id']),
                     timestamp=datetime.strptime(row['timestamp'], "%Y-%m-%d %H:%M:%S"),
                     value=row['value'],

@@ -60,6 +60,6 @@ def delete_sensor_item(request, sensor_id: int):
         sensor.delete()
         return {"message": "Object Deleted Successfully"}
     except Http404 as e:
-        raise Http404(str(e))
+        raise e
     except Exception as e:
         raise HttpError(400, "Something Went Wrong")
