@@ -24,7 +24,7 @@ from api.routers.production_readings import production_readings
 
 api = NinjaAPI(title="Oilfield Operations API", version="0.1.0")
 
-api.add_router("/oil_fields", oil_fields)
+api.add_router("/oil-fields", oil_fields)
 api.add_router("/wells", wells)
 api.add_router("/sensors", sensors)
 api.add_router("/production-readings", production_readings)
