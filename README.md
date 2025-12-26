@@ -58,7 +58,7 @@
 
 ## To Seed Data
 ```
-python manage.py load_data 
+docker-compose exec web python manage.py load_data
 ```
 
 ## Endpoint List:
