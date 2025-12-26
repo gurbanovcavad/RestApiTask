@@ -6,7 +6,7 @@ import os
 
 class Command(BaseCommand):
     def handle(self, *args, **kwargs):
-        data_dir = r"C:\Users\cavad\OneDrive\Masaüstü\RestApiTask\oilfield-api\app\api\data"
+        data_dir = r"/app/api/data"
         oil_fields = []
         with open(os.path.join(data_dir, 'oil_fields.csv'), mode='r') as file:
             reader = csv.DictReader(file)
