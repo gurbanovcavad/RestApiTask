@@ -16,18 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ninja import NinjaAPI
-from api.routers.oil_fields import oil_fields
-from api.routers.wells import wells
-from api.routers.sensors import sensors
-from api.routers.production_readings import production_readings
-
-api = NinjaAPI(title="Oilfield Operations API", version="0.1.0")
-
-api.add_router("/oil-fields", oil_fields)
-api.add_router("/wells", wells)
-api.add_router("/sensors", sensors)
-api.add_router("/production-readings", production_readings)
+from api.api import api
 
 urlpatterns = [
     path("admin/", admin.site.urls),

@@ -46,6 +46,15 @@ wheels = [
 ]
 
 [[package]]
+name = "contextlib2"
+version = "21.6.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/13/37ea7805ae3057992e96ecb1cffa2fa35c2ef4498543b846f90dd2348d8f/contextlib2-21.6.0.tar.gz", hash = "sha256:ab1e2bfe1d01d968e1b7e8d9023bc51ef3509bba217bb730cee3827e1ee82869", size = 43795, upload-time = "2021-06-27T06:54:40.841Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/76/56/6d6872f79d14c0cb02f1646cbb4592eef935857c0951a105874b7b62a0c3/contextlib2-21.6.0-py2.py3-none-any.whl", hash = "sha256:3fbdb64466afd23abaf6c977627b75b6139a5a3e8ce38405c5b413aed7a0471f", size = 13277, upload-time = "2021-06-27T06:54:20.972Z" },
+]
+
+[[package]]
 name = "django"
 version = "5.2.9"
 source = { registry = "https://pypi.org/simple" }
@@ -103,6 +112,23 @@ wheels = [
 ]
 
 [[package]]
+name = "django-ninja-extra"
+version = "0.30.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "asgiref" },
+    { name = "contextlib2" },
+    { name = "django", version = "5.2.9", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "django", version = "6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+    { name = "django-ninja" },
+    { name = "injector" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f9/f7/a089cbcb3a00a925d7da0b6e8230f92696f7dafca6c49e833a6617f9eb52/django_ninja_extra-0.30.8.tar.gz", hash = "sha256:f18089ed87067342f1641c01c023472834d3eae26a396389da1432f1ee0c270d", size = 61134, upload-time = "2025-12-18T11:52:57.88Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8d/ed/98d84f78246abfc33b48db479b00649cfc5d779ab5e931cbc5a66fa470fd/django_ninja_extra-0.30.8-py3-none-any.whl", hash = "sha256:ac0de87aae3d21f4ed7f120c41334c9277346efc393d4891fa0ba99c9ffdd8d5", size = 82366, upload-time = "2025-12-18T11:52:56.818Z" },
+]
+
+[[package]]
 name = "gunicorn"
 version = "23.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -124,6 +150,15 @@ wheels = [
 ]
 
 [[package]]
+name = "injector"
+version = "0.23.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1f/f5/060088d45fd57db2e2164ae289a96066d3e48320c0c99bba5e50eb245d22/injector-0.23.0.tar.gz", hash = "sha256:7e59db84faa5358474c8ee05abca6ab6bd02519fbefcf175e0b230ee7d2d4bac", size = 55720, upload-time = "2025-12-01T15:16:31.037Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/54/52/2e771b1acc010f0351e703d524702db72b80ad8b375dccac8488ccc02a61/injector-0.23.0-py2.py3-none-any.whl", hash = "sha256:86ab389805b4aaabfe235b2b2b85ff515af4d0209faccf1d60de2872c92c1fa0", size = 21483, upload-time = "2025-12-01T15:16:29.664Z" },
+]
+
+[[package]]
 name = "oilfield-api"
 version = "0.1.0"
 source = { virtual = "." }
@@ -132,6 +167,7 @@ dependencies = [
     { name = "django", version = "6.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "django-environ" },
     { name = "django-ninja" },
+    { name = "django-ninja-extra" },
     { name = "gunicorn" },
     { name = "psycopg2-binary" },
     { name = "uvicorn" },
@@ -142,6 +178,7 @@ requires-dist = [
     { name = "django", specifier = ">=5.2.9" },
     { name = "django-environ", specifier = ">=0.12.0" },
     { name = "django-ninja", specifier = ">=1.5.1" },
+    { name = "django-ninja-extra", specifier = ">=0.30.8" },
     { name = "gunicorn", specifier = ">=23.0.0" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
     { name = "uvicorn", specifier = ">=0.40.0" },
