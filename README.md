@@ -179,7 +179,10 @@ docker-compose exec web python manage.py load_data
     DELETE: /api/production-readings/{reading_id}
 
 ## To Run the Project:
-- change the .env.example to .env and update the context
+```
+mv .env.example .env
+```
+* update the context of .env file
 ```
 docker-compose up --build
 ```
