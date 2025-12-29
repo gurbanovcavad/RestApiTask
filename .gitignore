@@ -10,4 +10,3 @@ wheels/
 .venv
 
 .env
-app\db.sqlite3
