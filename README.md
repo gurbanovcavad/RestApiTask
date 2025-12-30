@@ -182,7 +182,7 @@ docker-compose exec web python manage.py load_data
 ```
 mv .env.example .env
 ```
-* update the context of .env file
+* update the content of .env file
 ```
 docker-compose up --build
 ```
